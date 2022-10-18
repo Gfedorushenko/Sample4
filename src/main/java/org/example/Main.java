@@ -25,7 +25,10 @@ class Main {
             case 1:
                 newNumber = Integer.parseInt(input);
                 store.criateNewOrder();
-                return number * 10 + newNumber;
+                if (newNumber == 0)
+                    return number / 10;
+                else
+                    return number * 10 + newNumber;
             case 11:
                 newNumber = Integer.parseInt(input);
                 if (newNumber == 1)
